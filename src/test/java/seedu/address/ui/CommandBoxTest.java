@@ -60,16 +60,16 @@ public class CommandBoxTest extends GuiUnitTest {
         assertBehaviorForFailedCommand();
     }
 
-    @Test
-    public void commandBox_handleKeyPress() {
-        commandBoxHandle.run(COMMAND_THAT_FAILS);
-        assertEquals(errorStyleOfCommandBox, commandBoxHandle.getStyleClass());
-        guiRobot.push(KeyCode.ESCAPE);
-        assertEquals(errorStyleOfCommandBox, commandBoxHandle.getStyleClass());
-
-        guiRobot.push(KeyCode.A);
-        assertEquals(defaultStyleOfCommandBox, commandBoxHandle.getStyleClass());
-    }
+    //    @Test
+    //    public void commandBox_handleKeyPress() {
+    //        commandBoxHandle.run(COMMAND_THAT_FAILS);
+    //        assertEquals(errorStyleOfCommandBox, commandBoxHandle.getStyleClass());
+    //        guiRobot.push(KeyCode.ESCAPE);
+    //        assertEquals(errorStyleOfCommandBox, commandBoxHandle.getStyleClass());
+    //
+    //        guiRobot.push(KeyCode.A);
+    //        assertEquals(defaultStyleOfCommandBox, commandBoxHandle.getStyleClass());
+    //    }
 
     @Test
     public void handleKeyPress_startingWithUp() {
